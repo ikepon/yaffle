@@ -10,6 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171022134623) do
+
+  create_table "hickwalls", force: :cascade do |t|
+    t.string   "last_squawk"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "wickwalls", force: :cascade do |t|
+    t.string   "last_squawk"
+    t.string   "last_tweet"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
 end

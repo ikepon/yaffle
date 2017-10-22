@@ -1,6 +1,3 @@
-
-# yaffle/test/core_ext_test.rb
-
 require 'test_helper'
 
 class CoreExtTest < ActiveSupport::TestCase
